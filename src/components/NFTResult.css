@@ -1,0 +1,32 @@
+.result-container {
+    margin         : 1em;
+    display        : flex;
+    flex-direction : column;
+    align-items    : center;
+    justify-content: center;
+}
+
+.result-container .text-error {
+    padding         : 1em;
+    background-color: red;
+    color           : white;
+}
+
+.result-container div {
+    background    : linear-gradient(90deg, rgba(23, 223, 120, 1) 0%, rgba(75, 226, 114, 1) 100%);
+    display       : flex;
+    flex-direction: column;
+    padding       : 1em;
+    border-radius : 10px;
+}
+
+.result-container div h3 {
+    margin-bottom: .5em;
+    text-align   : center;
+    font-weight  : 500;
+}
+
+.result-container div p {
+    font-size  : 14px;
+    font-weight: 500;
+}
