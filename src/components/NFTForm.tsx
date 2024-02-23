@@ -32,10 +32,12 @@ const NFTForm: React.FC = () => {
           <h2>Fetch NFT Data</h2>
           <form onSubmit={handleSubmit}>
             <div>
-                <input type="text" placeholder='Contract Address' value={contractNumber} onChange={(e) => setContractNumber(e.target.value)} />
+              <label>Contract Address</label>
+                <input type="text" value={contractNumber} onChange={(e) => setContractNumber(e.target.value)} />
             </div>
             <div>
-                <input type="text" placeholder='NFT ID' value={nftId} onChange={(e) => setNFTId(e.target.value)} />
+            <label>NFT ID</label>
+                <input type="text" value={nftId} onChange={(e) => setNFTId(e.target.value)} />
             </div>
             <button type="submit">Fetch Data</button>
           </form>
